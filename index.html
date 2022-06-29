@@ -6,34 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belly Busters</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+        <h1>Belly Busters</h1>
+        <nav class="navBar">
+            <ul class="options">
+                <li><a href="#calendar">Calendar</a></li>
+                <li><a href="#score">Nutrition Score</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div>
+        <div class="searchBar">
             <input type="text">
         </div>
 
         <div>
-            <table>
-                <caption></caption>
+            <div id="score">
+                <p id="average">Weekly Nutrition Score:</p>
+            </div>
+            <table id="calendar" style="width: 100%">
+                <caption>Meal Planning Calendar</caption>
+                <tr>
+                    <td>Meal</td>
+                    <td>Sunday</td>
+                    <td>Monday</td>
+                    <td>Tuesday</td>
+                    <td>Wednesday</td>
+                    <td>Thursday</td>
+                    <td>Friday</td>
+                    <td>Saturday</td>   
+                </tr>
+                <container class="grid"></container>
+                <tr>
+                    <td>Breakfast</td>
+                </tr>
+                <tr>
+                    <td>Lunch</td>
+                </tr>
+                <tr>
+                    <td>Dinner</td>
+                </tr>
             </table>
         </div>
 
         <div>
-// contact/about section     
+            <h2 id="about">About us</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam eos deserunt nihil alias fugiat in hic quas dignissimos maiores esse soluta debitis, mollitia iste veritatis quibusdam dolores doloremque aut? Consequatur?</p>
+            <h2>Contact us</h2>
+            <ul id="contact">
+                <li>
+                    <a href="mailto: bellybusters@bussin.com">bellybusters@bussin.com</a>
+                </li>
+                <li>Phone: 777-777-7777</li>
+            </ul>   
         </div>
     
     </main>
+    <footer>
+        © 2022 by Belly Busters, LLC
+    </footer>
     
 </body>
 </html>
