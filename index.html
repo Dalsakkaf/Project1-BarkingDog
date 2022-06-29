@@ -8,7 +8,7 @@
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!-- Compiled and minified CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <title>Belly Busters</title>
 <head>
 <body>
@@ -25,27 +25,18 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <form>
-            <div class="class-input-field">
-                <input id="search" type="search" required>
-                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-            </div>
-        </form>
     </nav>
 
     <ul class="sidenav" id="mobile-links">
-       <li><a href="#calendar">Calendar</a></li>
-       <li><a href="#score">Nutrition Score</a></li>
-       <li><a href="#about">About</a></li>
-       <li><a href="#contact">Contact</a></li>
-    </ul>
+        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="#score">Nutrition Score</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+     </ul>
 
-    <main class="container">
+    <section>
         <div>
-            <div id="score">
-                <p id="average">Weekly Nutrition Score:</p>
-            </div>
-            <table id="calendar" style="width: 100%">
+            <table>
                 <caption>Meal Planning Calendar</caption>
                 <tr>
                     <td>Meal</td>
@@ -68,8 +59,9 @@
                     <td>Dinner</td>
                 </tr>
             </table>
-        </div>
+    </section>
 
+    <section>     
         <div>
             <h2 id="about">About us</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam eos deserunt nihil alias fugiat in hic quas dignissimos maiores esse soluta debitis, mollitia iste veritatis quibusdam dolores doloremque aut? Consequatur?</p>
@@ -81,12 +73,12 @@
                 <li>Phone: 777-777-7777</li>
             </ul>   
         </div>
-    
-    </main>
+    </section>
+
     <footer class="center">
         © 2022 by Belly Busters, LLC
     </footer>
-    <script src="script.js"></script>
+    <script src="./project1-skeleton.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
     <script>$(document).ready(function(){$('.sidenav').sidenav();})</script>
