@@ -4,28 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>Belly Busters</title>
-</head>
-
+<head>
 <body>
-    <header>
-        <h1>Belly Busters</h1>
-        <nav class="navBar">
-            <ul class="options">
+    <nav class="nav-wrapper">
+        <div class="container">
+            <a href="#" class="brand-logo">BellyBusters</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
                 <li><a href="#calendar">Calendar</a></li>
                 <li><a href="#score">Nutrition Score</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="searchBar">
-            <input type="text">
         </div>
+        <form>
+            <div class="class-input-field">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            </div>
+        </form>
+    </nav>
 
+    <ul class="sidenav" id="mobile-links">
+       <li><a href="#calendar">Calendar</a></li>
+       <li><a href="#score">Nutrition Score</a></li>
+       <li><a href="#about">About</a></li>
+       <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <main class="container">
         <div>
             <div id="score">
                 <p id="average">Weekly Nutrition Score:</p>
@@ -42,7 +57,7 @@
                     <td>Friday</td>
                     <td>Saturday</td>   
                 </tr>
-                <container class="grid"></container>
+                <div class="row"></div>
                 <tr>
                     <td>Breakfast</td>
                 </tr>
@@ -68,9 +83,12 @@
         </div>
     
     </main>
-    <footer>
+    <footer class="center">
         © 2022 by Belly Busters, LLC
     </footer>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+    <script>$(document).ready(function(){$('.sidenav').sidenav();})</script>
 </body>
 </html>
