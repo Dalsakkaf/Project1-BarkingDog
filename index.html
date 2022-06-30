@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="style.css"/>
     <title>Belly Busters</title>
 <head>
-<body>
+<body class="wholebackground deep-orange lighten-4">
+
     <nav class="nav-wrapper">
         <div class="container">
             <a href="#" class="brand-logo">BellyBusters</a>
@@ -24,19 +25,9 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
-            <a class='right dropdown-trigger btn red lighten-3' href='#' data-target='dropdown1'>Search</a>
-
-            <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">three</a></li>
-                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-            </ul>
         </div>
     </nav>
+
 
     <ul class="sidenav" id="mobile-links">
         <li><a href="#calendar">Calendar</a></li>
@@ -46,18 +37,19 @@
      </ul>
 
     <section>
-        <div>
+        <div class="calendar">
             <table>
-                <caption>Meal Planning Calendar</caption>
+                <caption class="title">Meal Planning Calendar</caption>
+
                 <tr>
-                    <td>Meal</td>
-                    <td>Sunday</td>
-                    <td>Monday</td>
-                    <td>Tuesday</td>
-                    <td>Wednesday</td>
-                    <td>Thursday</td>
-                    <td>Friday</td>
-                    <td>Saturday</td>   
+                    <th>Meal</th>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>   
                 </tr>
                 <div class="row"></div>
                 <tr>
@@ -70,12 +62,14 @@
                     <td>Dinner</td>
                 </tr>
             </table>
+            
         </div>
     </section>
 
     <section>     
         <div>
             <h3 id="about">About us</h3>
+
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam eos deserunt nihil alias fugiat in hic quas dignissimos maiores esse soluta debitis, mollitia iste veritatis quibusdam dolores doloremque aut? Consequatur?</p>
             <h3>Contact us</h3>
             <ul id="contact">
@@ -90,10 +84,10 @@
     <footer class="center">
         © 2022 by Belly Busters, LLC
     </footer>
-    <script src="./project1-skeleton.js"></script>
+    
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
     <script>$(document).ready(function(){$('.sidenav').sidenav();})</script>
-    <script>$('.dropdown-trigger').dropdown();</script>
 </body>
 </html>
