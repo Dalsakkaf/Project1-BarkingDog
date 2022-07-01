@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css"/>
     <title>Belly Busters</title>
 <head>
-<body class="wholebackground deep-orange lighten-4">
-    <nav class="nav-wrapper">
+<body class="wholebackground brown lighten-4">
+    <nav class="nav-wrapper deep-orange darken-4">
         <div class="container">
             <a href="#" class="brand-logo">BellyBusters</a>
             <a href="#" class="sidenav-trigger" data-target="mobile-links">
-              <i class="material-icons">menu</i>
+            <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#calendar">Calendar</a></li>
@@ -27,19 +27,42 @@
         </div>
     </nav>
 
+    <nav>
+        <div class="nav-wrapper deep-orange darken-1">
+        <form>
+            <div class="input-field">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+            </div>
+        </form>
+        </div>
+    </nav>
+
 
     <ul class="sidenav" id="mobile-links">
         <li><a href="#calendar">Calendar</a></li>
         <li><a href="#score">Nutrition Score</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-     </ul>
+    </ul>
 
     <section>
+        <div class="container2">
+            <div class="row text-center">
+                <h3>
+                    Not sure what to eat?
+                </h3>
+                <h5>Get a random meal by clicking below</h5>
+                <button class="button-primary" id="get_meal">Get Meal ?</button>
+                <display-text class="addText"></display-text>
+            </div>
+            <div id="meal" class="row meal"></div>
+        </div>
         <div class="calendar">
-            <table>
+            <table class="table">
                 <caption class="title">Meal Planning Calendar</caption>
-                <tr>
+                <tr id="days">
                     <th>Meal</th>
                     <th>Sunday</th>
                     <th>Monday</th>

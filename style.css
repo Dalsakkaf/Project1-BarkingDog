@@ -6,15 +6,23 @@
 .blur {
   background: rgba(225, 225, 225, 0.2);
   backdrop-filter: blur(8px);
-  color: darkred;
+  color: #1e1313;
 }
 
 .title {
   font-size: 26px;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 .calendar {
   color: #520707;
+}
+
+.table {
+  border-collapse: collapse;
+  border: 1px solid #1e1313;
+}
+
+#days {
+  border: 1px solid #1e1313;
 }
