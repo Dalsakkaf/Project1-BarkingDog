@@ -14,20 +14,43 @@
 <body class="wholebackground deep-orange lighten-4">
 
     <nav class="nav-wrapper">
-        <div class="container">
-            <a href="#" class="brand-logo">BellyBusters</a>
+        <div>
+            <a href="#" class="brand-logo center">BellyBusters</a>
             <a href="#" class="sidenav-trigger" data-target="mobile-links">
               <i class="material-icons">menu</i>
             </a>
+
             <ul class="right hide-on-med-and-down">
                 <li><a href="#calendar">Calendar</a></li>
                 <li><a href="#score">Nutrition Score</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <a class='dropdown-trigger btn red lighten-3' href='#' data-target='dropdown1'>Search</a>
+
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">one</a></li>
+                <li><a href="#!">two</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">three</a></li>
+                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+            </ul>
         </div>
     </nav>
 
+    <nav>
+        <div class="nav-wrapper">
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
 
     <ul class="sidenav" id="mobile-links">
         <li><a href="#calendar">Calendar</a></li>
@@ -37,10 +60,9 @@
      </ul>
 
     <section>
-        <div class="calendar">
-            <table>
+        <div>
+            <table class="highlight">
                 <caption class="title">Meal Planning Calendar</caption>
-
                 <tr>
                     <th>Meal</th>
                     <th>Sunday</th>
@@ -51,15 +73,15 @@
                     <th>Friday</th>
                     <th>Saturday</th>   
                 </tr>
-                <div class="row"></div>
+                
                 <tr>
-                    <td>Breakfast</td>
+                    <th>Breakfast</th>
                 </tr>
                 <tr>
-                    <td>Lunch</td>
+                    <th>Lunch</th>
                 </tr>
                 <tr>
-                    <td>Dinner</td>
+                    <th>Dinner</th>
                 </tr>
             </table>
             
@@ -81,7 +103,7 @@
         </div>
     </section>
 
-    <footer class="center">
+    <footer class="center-align">
         © 2022 by Belly Busters, LLC
     </footer>
     
