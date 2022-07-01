@@ -4,45 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css"/>
     <title>Belly Busters</title>
-</head>
-
-<body>
-    <header>
-        <h1>Belly Busters</h1>
-        <nav class="navBar">
-            <ul class="options">
+<head>
+<body class="wholebackground brown lighten-4">
+    <nav class="nav-wrapper deep-orange darken-4">
+        <div class="container">
+            <a href="#" class="brand-logo">BellyBusters</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
                 <li><a href="#calendar">Calendar</a></li>
                 <li><a href="#score">Nutrition Score</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="searchBar">
-            <input type="text">
         </div>
+    </nav>
 
-        <div>
-            <div id="score">
-                <p id="average">Weekly Nutrition Score:</p>
+    <nav>
+        <div class="nav-wrapper deep-orange darken-1">
+        <form>
+            <div class="input-field">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
             </div>
-            <table id="calendar" style="width: 100%">
-                <caption>Meal Planning Calendar</caption>
-                <tr>
-                    <td>Meal</td>
-                    <td>Sunday</td>
-                    <td>Monday</td>
-                    <td>Tuesday</td>
-                    <td>Wednesday</td>
-                    <td>Thursday</td>
-                    <td>Friday</td>
-                    <td>Saturday</td>   
+        </form>
+        </div>
+    </nav>
+
+
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="#score">Nutrition Score</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <section>
+        <div class="container2">
+            <div class="row text-center">
+                <h3>
+                    Not sure what to eat?
+                </h3>
+                <h5>Get a random meal by clicking below</h5>
+                <button class="button-primary" id="get_meal">Get Meal ?</button>
+                <display-text class="addText"></display-text>
+            </div>
+            <div id="meal" class="row meal"></div>
+        </div>
+        <div class="calendar">
+            <table class="table">
+                <caption class="title">Meal Planning Calendar</caption>
+                <tr id="days">
+                    <th>Meal</th>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>   
                 </tr>
-                <container class="grid"></container>
+                <div class="row"></div>
                 <tr>
                     <td>Breakfast</td>
                 </tr>
@@ -53,12 +83,16 @@
                     <td>Dinner</td>
                 </tr>
             </table>
+            
         </div>
+    </section>
 
+    <section>     
         <div>
-            <h2 id="about">About us</h2>
+            <h3 id="about">About us</h3>
+
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam eos deserunt nihil alias fugiat in hic quas dignissimos maiores esse soluta debitis, mollitia iste veritatis quibusdam dolores doloremque aut? Consequatur?</p>
-            <h2>Contact us</h2>
+            <h3>Contact us</h3>
             <ul id="contact">
                 <li>
                     <a href="mailto: bellybusters@bussin.com">bellybusters@bussin.com</a>
@@ -66,11 +100,15 @@
                 <li>Phone: 777-777-7777</li>
             </ul>   
         </div>
-    
-    </main>
-    <footer>
+    </section>
+
+    <footer class="center">
         © 2022 by Belly Busters, LLC
     </footer>
+    
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+    <script>$(document).ready(function(){$('.sidenav').sidenav();})</script>
 </body>
 </html>
