@@ -1,4 +1,5 @@
 
+
 .background {
   background-image: url("oranges\ n\ stuff.webp");
 }
@@ -25,4 +26,24 @@
 
 #days {
   border: 1px solid #1e1313;
+=======
+
+.background {
+  background-image: url("oranges\ n\ stuff.webp");
+}
+
+.blur {
+  background: rgba(225, 225, 225, 0.2);
+  backdrop-filter: blur(8px);
+  color: darkred;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.calendar {
+  color: #520707;
 }
