@@ -27,30 +27,15 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <a class='dropdown-trigger btn red lighten-3' href='#' data-target='dropdown1'>Search</a>
-
-            <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">three</a></li>
-                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-            </ul>
+            <div class="nav-wrapper">
+                <form autocomplete="off" action="/action_page.php">
+                    <div class="autocomplete" style="width:25%;">
+                      <input id="myInput" type="text" name="myFavorites" placeholder="Search">
+                    </div>
+                    <input type="submit">
+                </form>
         </div>
     </nav>
-
-    <nav>
-        <div class="nav-wrapper">
-          <form>
-            <div class="input-field">
-              <input id="search" type="search" required>
-              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-              <i class="material-icons">close</i>
-            </div>
-          </form>
-        </div>
-      </nav>
 
     <ul class="sidenav" id="mobile-links">
         <li><a href="#calendar">Calendar</a></li>
@@ -111,5 +96,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
     <script>$(document).ready(function(){$('.sidenav').sidenav();})</script>
+    <script>$('.dropdown-trigger').dropdown('');</script>
 </body>
 </html>
