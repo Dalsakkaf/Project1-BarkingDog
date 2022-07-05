@@ -1,49 +1,50 @@
-
-
 .background {
-  background-image: url("oranges\ n\ stuff.webp");
+    background-image: url("oranges\ n\ stuff.webp");
 }
 
 .blur {
-  background: rgba(225, 225, 225, 0.2);
-  backdrop-filter: blur(8px);
-  color: #1e1313;
+    background: rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(8px);
+    color: #1e1313;
 }
 
 .title {
-  font-size: 26px;
-  font-weight: bold;
+    font-size: 26px;
+    font-weight: bold;
 }
 
 .calendar {
-  color: #520707;
+    color: #520707;
 }
 
 .table {
-  border-collapse: collapse;
-  border: 1px solid #1e1313;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #1e1313;
+    justify-self: auto;
 }
 
 #days {
-  border: 1px solid #1e1313;
-=======
+    border: 1px solid #1e1313;
+    margin-right: 100px;
+}
 
 .background {
-  background-image: url("oranges\ n\ stuff.webp");
+    background-image: url("oranges\ n\ stuff.webp");
 }
 
 .blur {
-  background: rgba(225, 225, 225, 0.2);
-  backdrop-filter: blur(8px);
-  color: darkred;
+    background: rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(8px);
+    color: darkred;
 }
 
 .title {
-  font-size: 26px;
-  font-weight: bold;
-  text-decoration: underline;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .calendar {
-  color: #520707;
+    color: #520707;
 }
