@@ -14,8 +14,7 @@ Project Description:
 In this project, our website will be an interactive calendar in which the user can plan out their entire week of eating. 
 This calendar will allow the user to input three meals a week, and it will pull from a database that has information on each of the meal's necessary ingredients. 
 These meals will then be stored in sequential order within the "Calendar" table on the page enabling easy tracking of meals consumed and planned meals to come.
-This calendar uses local storage to keep the users selections in place across browsing sessions.
-User's can select "Favorite" meals and add them to a list which uses local storage to keep their selected meals in the Favorite List.
+User's can select "Favorite" meals and add them to a list.
 Via buttons, users can remove sequentially items from the calendar and/or clear the favorites list.
 This app was designed with a mobile first philosophy.
 
