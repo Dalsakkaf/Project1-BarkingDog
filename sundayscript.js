@@ -1,4 +1,6 @@
 var calendarArray;
+var fav = document.querySelector("#favoritesList");
+calendarArray = document.querySelector(".table");
 var meals = ["Meatball Sub", "Chicken Tikka Masala", "Chicken Alfredo", "Grilled Chicken", "Grilled Shrimp", "Chicken Strips", "Spaghetti and Meatballs", "Turkey Club", "Baked Ziti", "Meatloaf", "Chicken Stirfry", "Eggs Benedict", "Sausage and Spinach Omelette", "Chicken Fried Steak", "Fish Tacos", "Grilled Salmon", "Fish and Chips", "Mushroom Soup", "Chocolate Cake", "Apple Pie", "Cherry Pie", "Pecan Pie", "Strawberry Shortcake", "Lemon Squares", "Cinnamon Rolls", "Tri-Tip Steak"]
 function autocomplete(inp, arr) {
     var currentFocus;
@@ -85,6 +87,13 @@ return response
 }
 
 autocomplete(document.getElementById("autocomplete-input"), meals);
+fav.addEventListener("keydown", function () {
+    localStorage.setItem("individualMeals", document.getElementById("favoritesList").textContent);
+})
+
+document.getElementById("favoritesList").innerHTML = localStorage.getItem("individualMeals");
+
+
 
 const getMealBtn = document.getElementById("get_meal");
 const mealContainer = document.getElementById("meal");
