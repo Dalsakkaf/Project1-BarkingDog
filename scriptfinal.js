@@ -84,7 +84,7 @@ function getmealsAPI() { //Recipes - Food - Nutrition API
     return response
 }
 
-autocomplete(document.getElementById("autocomplete-input"), meals);
+autocomplete(document.getElementById("autocomplete-input"), getmealsAPI);
 
 const getMealBtn = document.getElementById("get_meal");
 const mealContainer = document.getElementById("meal");
